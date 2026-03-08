@@ -179,4 +179,5 @@ A IA foi usada como suporte para documentação. A análise técnica, a identifi
 
 # Contato
 **Candidato:** *Alini Xavier da Costa*
+
 **LinkedIn:** *https://www.linkedin.com/in/alinixavier/*
