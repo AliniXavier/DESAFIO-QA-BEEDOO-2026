@@ -131,25 +131,25 @@ Esta etapa está descrita no formulário do Desafio.
 
 Além dos bugs encontrados, identifiquei oportunidades de melhoria que elevariam a qualidade da aplicação:
 
-**Implementar autenticação e autorização:**
+**1. Implementar autenticação e autorização:**
 Adicionar fluxo de login com JWT, protegendo os endpoints para que apenas usuários autenticados possam cadastrar e excluir cursos.
 
-**Implementar edição de cursos (PUT/PATCH):**
+**2. Implementar edição de cursos (PUT/PATCH):**
 A aplicação possui um CRUD incompleto, falta o método de atualização. Sem edição, o usuário não tem como corrigir informações de um curso já cadastrado. Isso é agravado pelo fato de que a exclusão também não funciona, deixando o usuário completamente sem saída para corrigir dados incorretos.
 
-**Tratar erros da API no front-end:**
+**3. Tratar erros da API no front-end:**
 O front-end deve verificar o status code de cada resposta antes de exibir mensagens ao usuário.
 
-**Validar formato de URL no campo de imagem**
+**4. Validar formato de URL no campo de imagem**
 O campo deve aceitar apenas strings no formato `https://...`. O valor digitado não deve ser usado diretamente em requisições sem validação prévia.
 
-**Adicionar confirmação antes de excluir**
+**5. Adicionar confirmação antes de excluir**
 Operações destrutivas devem solicitar confirmação do usuário antes de serem executadas.
 
-**Exibir mensagem quando a lista está vazia**
+**6. Exibir mensagem quando a lista está vazia**
 Quando não há cursos cadastrados, exibir mensagem informativa como "Nenhum curso cadastrado ainda" em vez de uma página em branco.
 
-**Implementar paginação na listagem**
+**7. Implementar paginação na listagem**
 Limitar o número de cursos exibidos por página para garantir performance e escalabilidade conforme o volume de dados cresce.
 
 ---
@@ -161,7 +161,7 @@ Limitar o número de cursos exibidos por página para garantir performance e esc
 Durante este desafio, utilizei o **Claude (Anthropic)** como ferramenta de apoio para estruturar e documentar o trabalho.
 
 **O que a IA fez:**
-- Ajudou a organizar e formatar a documentação dos casos de teste e bugs.
+-  Ajudou a organizar e formatar a documentação dos casos de teste e bugs.
 - Sugeriu categorias de cenários de teste com base nos fluxos descritos.
 - Auxiliou na ampliação de ideias cenários e brainstorm em cima dos testes identificados.
 - Auxiliou na estruturação do README e da planilha.
